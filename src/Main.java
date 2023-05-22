@@ -2,16 +2,18 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        NewPhoneModel mobileNew1 = new NewPhoneModel("Samsung", 5.5, "Snapdragon9999", 10,
+                40, 3500, "Android", 300, "Galaxy S22 Ultra",
+                true, false);
+        System.out.println(mobileNew1.toString());
+        mobileNew1.doAllFunctions();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        OldPhoneModel oldMobile1 = new OldPhoneModel("Nokia", "3310");
+        System.out.println(oldMobile1.toString());
+        oldMobile1.text();
+        oldMobile1.ring();
     }
+
 }
